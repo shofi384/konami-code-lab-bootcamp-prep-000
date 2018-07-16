@@ -11,9 +11,18 @@ const codes = [
   "a"
 ];
 
+let index = 0;
+
 function init() {
   document.body.addEventListener('keydown', function(event) {
-    if(for(let i=0; i<codes.length; i++) {
-      alert('Congratulations!\nYou entered a correct sequence')
+    if(event.key === codes[index]) {
+      index++
+      if(index === codes.length) {
+        alert('Congratulations!')
+        index = 0
+      }
+    }
+    else
+    index = 0
   });
 }
