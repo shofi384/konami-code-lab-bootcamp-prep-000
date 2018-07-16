@@ -12,7 +12,7 @@ const codes = [
 ];
 
 function init() {
-  document.body.addEventListener('keydown', alerts() {
-    
+  document.body.addEventListener('keydown', alerts(event) {
+    alert('You entered a correct swquence')
   })
 }
