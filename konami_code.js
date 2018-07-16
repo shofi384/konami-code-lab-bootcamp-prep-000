@@ -12,5 +12,7 @@ const codes = [
 ];
 
 function init() {
-  document.body.addEventListener('keydown', );
+  document.body.addEventListener('keydown', function() {
+    alert('Congratulations!\nYou entered a correct sequence')
+  });
 }
